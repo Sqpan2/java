@@ -5,6 +5,7 @@ import com.mashibing.ChiEngDTO;
 import javax.sound.midi.Soundbank;
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -25,8 +26,15 @@ public class MyDemo {
         // testDoWhile();
         // testBigDecimal();
         // testDecimalFormat();
-        demo.testLambdaSort();
+//        demo.testLambdaSort();
+        testEngMonth();
 
+    }
+
+
+    private static void testEngMonth(){
+        SimpleDateFormat df = new SimpleDateFormat("MMM",Locale.ENGLISH);
+        System.out.println(df.format(new Date()));
     }
 
     private void testLambdaSort() {
